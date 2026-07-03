@@ -1,2 +1,7 @@
 node_modules/
 .env
+
+# Credenciales OAuth de Google Search Console (NUNCA subir al repo)
+client_secrets.json
+token.json
+credentials/
