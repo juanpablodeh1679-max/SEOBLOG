@@ -5,3 +5,6 @@ node_modules/
 client_secrets.json
 token.json
 credentials/
+
+# Config MCP real con secretos (usa .mcp.json.example como plantilla)
+.mcp.json

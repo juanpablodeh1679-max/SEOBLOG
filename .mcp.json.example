@@ -1,0 +1,33 @@
+{
+  "// NOTA": "Copia este archivo a .mcp.json (project scope) o usa 'claude mcp add'. Ajusta las rutas --directory a tu máquina. NO pongas la App Password en claro: usa variables de entorno como abajo.",
+  "mcpServers": {
+    "gsc": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\PC\\Downloads\\mcp-gsc-5\\mcp-gsc",
+        "run",
+        "python",
+        "src/gsc_server.py"
+      ],
+      "env": {
+        "GSC_CREDENTIALS_PATH": "C:\\Users\\PC\\Downloads\\mcp-gsc-5\\mcp-gsc\\config\\client_secrets.json"
+      }
+    },
+    "wordpress": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\PC\\Downloads\\wordpress-mcp",
+        "run",
+        "python",
+        "wordpress_server.py"
+      ],
+      "env": {
+        "WP_URL": "https://logistictrade.com",
+        "WP_USERNAME": "logistica_wtm3ry",
+        "WP_APP_PASSWORD": "${WP_APP_PASSWORD}"
+      }
+    }
+  }
+}
