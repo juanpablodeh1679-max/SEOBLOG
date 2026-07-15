@@ -7,13 +7,13 @@
       "command": "uv",
       "args": [
         "--directory",
-        "${MCP_GSC_DIR}",
+        "C:\\Users\\juanp\\mcp-gsc",
         "run",
         "python",
         "gsc_server.py"
       ],
       "env": {
-        "GSC_OAUTH_CLIENT_SECRETS_FILE": "${GSC_OAUTH_CLIENT_SECRETS_FILE}"
+        "GSC_OAUTH_CLIENT_SECRETS_FILE": "C:\\Users\\juanp\\Documents\\client_secrets.json"
       }
     }
   }
