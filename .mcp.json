@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "ubersuggest": {
+      "url": "https://ubersuggest-mcp.neilpatelapi.com/mcp"
+    },
+    "gscServer": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${MCP_GSC_DIR}",
+        "run",
+        "python",
+        "gsc_server.py"
+      ],
+      "env": {
+        "GSC_OAUTH_CLIENT_SECRETS_FILE": "${GSC_OAUTH_CLIENT_SECRETS_FILE}"
+      }
+    }
+  }
+}
